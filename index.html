@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+  <style>
+    body {
+      background-color: #fce4ec;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      color: #fff;
+      overflow: hidden; /* To prevent scroll due to confetti */
+    }
+    h1 {
+      font-size: 4em;
+      margin-top: 50px;
+      color: #ff4081;
+      text-shadow: 2px 2px #ff80ab;
+    }
+    .container {
+      padding: 20px;
+    }
+    .message {
+      font-size: 2em;
+      color: #ffeb3b;
+      text-shadow: 2px 2px #ff5722;
+      margin-top: 20px;
+    }
+    .video-container {
+      margin: 50px auto;
+      width: 100%;
+      max-width: 800px; /* Adjusts max size for the video */
+    }
+    .video-container video {
+      width: 100%; /* Make the video responsive */
+      height: auto;
+      border-radius: 15px; /* Add rounded corners to match design */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Optional shadow */
+    }
+    .cake img {
+      width: 250px;
+      margin-top: 20px;
+    }
+    /* Confetti Falling Effect */
+    .confetti {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .confetti-piece {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #f44336;
+      animation: fall 5s linear infinite;
+    }
+    .confetti-piece:nth-child(2n) { background-color: #2196F3; }
+    .confetti-piece:nth-child(3n) { background-color: #4CAF50; }
+    .confetti-piece:nth-child(4n) { background-color: #FFC107; }
+    .confetti-piece:nth-child(5n) { background-color: #9C27B0; }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0);
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Birthday!</h1>
+
+  <div class="container">
+    <div class="message">Tập thể lớp 12C9 chúc thầy sinh nhật thật vui vẻ, hạnh phúc và luôn tràn đầy năng lượng! Mong thầy luôn gặp nhiều may mắn, thành công và tiếp tục truyền cảm hứng cho chúng em.</div>
+
+    <!-- Preloaded Video with sound and responsive size -->
+    <div class="video-container">
+      <video controls autoplay>
+        <source src="your-video-file.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="cake">
+      <img src="https://example.com/birthday_cake.png" alt="Birthday Cake">
+    </div>
+  </div>
+
+  <!-- Confetti falling animation -->
+  <div class="confetti">
+    <div class="confetti-piece" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="confetti-piece" style="left: 20%; animation-delay: 1s;"></div>
+    <div class="confetti-piece" style="left: 30%; animation-delay: 2s;"></div>
+    <div class="confetti-piece" style="left: 40%; animation-delay: 0.5s;"></div>
+    <div class="confetti-piece" style="left: 50%; animation-delay: 1.5s;"></div>
+    <div class="confetti-piece" style="left: 60%; animation-delay: 2.5s;"></div>
+    <div class="confetti-piece" style="left: 70%; animation-delay: 0.8s;"></div>
+    <div class="confetti-piece" style="left: 80%; animation-delay: 2.2s;"></div>
+    <div class="confetti-piece" style="left: 90%; animation-delay: 3s;"></div>
+
+
+  </script>
+</body>
+</html>
